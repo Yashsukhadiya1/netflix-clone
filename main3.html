@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix </title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="icon" href="faviconnetflix.ico" type="image/x-icon">
+    <script src="javascript3.js" defer></script>
+
+</head>
+<body>
+    <!--all the content should be inside this video-->
+    <div class="video-background">
+         <!--bringing video-->
+         <video autoplay loop muted playsinline>
+            <source src="videoplayback.mp4" type="video/mp4">
+         </video>
+<div class="content">
+    <img src="images.png" alt="movie title image" class="title-img">
+    <p>After being bitten by radioactive element,it will get crashed.</p>
+    <div class="buttons">
+        <button class="btn play"> 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" width="24" height="24">
+                <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg><b>Play</b>
+            </button>
+        <button class="btn more-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" width="24" height="24">
+                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><b>More info</b>
+       </button>     
+    </div>
+</div>
+    </div>
+    <!--nav bar-->
+    <div class="navbar">
+       <!-----------left nav------------------> 
+    <div class="left-nav">
+        <!------nav bar logo-->
+        <a href="/browse" class="logo">
+            <img src="logonetflix.png" alt="Netflix logo">
+        </a>
+<!--nav bar menu-->
+      <ul class="navigation">
+        <li><a href="/browse">Home</a></li>
+        <li><a href="/browse/genre/83">TV Shows</a></li>
+        <li><a href="/browse/genre/34399">Movie</a></li>
+        <li><a href="/browse">News & Poular</a></li>
+        <li><a href="/browse">My list</a></li>
+        <li><a href="/browse">Browse by languages</a></li>
+      </ul>
+    </div>
+    <!---right nav-->
+    <div class="right-nav">
+        <div id="dark-mode-toggle" class="dark-mode-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="" height="20">
+                <path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
+        </div>
+        <button class="icon-search" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+        </button>
+        <a href="/Kids">Children</a>
+
+        <button class="icon-bell" aria-label="Notification">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
+                <path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg>
+        <span class="notification-count">3</span>
+        </button>
+
+<div class="profile">
+    <img src="yash photo.jpg" alt="User Profile" class="profile-pic">
+    <div class="dropdown">
+        <ul class="dropdown-menu">
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li class="separator"></li>
+            <li><a href="#">SIGN OUT</a></li>
+        </ul>
+    </div>
+</div>
+    </div>
+    </div>
+</body>
+</html>
